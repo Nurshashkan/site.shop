@@ -1,0 +1,157 @@
+.man{
+    display: flex;
+    background-color: #e4c49f;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-top: 110px;
+}
+
+img{
+    width: 300px;
+    height: 300px ;
+}
+
+p{
+    font-size: large;
+}
+
+@media all and (max-width: 500px){
+    .man{
+        flex-direction: column;
+        padding: 50px;
+    }
+}
+
+.men{
+    transition: all 5s;
+}
+
+.men:hover{
+    margin-top: 10px;
+}
+
+.blockone{
+    width: 800px;
+    height: 400px;
+    background-color: blanchedalmond;
+    position: relative;
+    left: 0;
+    animation-name: one;
+    animation-duration: 5s;
+}
+
+.onepic{
+    width: 100%;
+    height: 340px;
+}
+
+.blocktwo{
+    width: 800px;
+    height: 400px;
+    background-color: blanchedalmond;
+    position: relative;
+    right: 0;
+    animation-name: two;
+    animation-duration: 5s;
+}
+
+.content{
+    display: flex;
+}
+
+@keyframes one{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes two{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+.animation{
+    display: flex;
+}
+.wrapper{
+    width: 350px;
+    outline: 1px solid darkcyan;
+    margin: 100px auto 0;
+    position: relative;
+    border: solid 5px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 50px;
+    opacity: 0;
+    font-size: larger;
+    
+}
+.a_1{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.a_1::before{
+    content:' ';
+    position: absolute;
+    width: 900px;
+    height: 200%;
+    right: 0;
+    bottom: -100%;
+    background: rgba(228, 138, 138, 0.5);
+    transform: skew(-45deg) translateX(100%);
+    transition: 2s;
+}
+
+.wrapper:hover a::before{
+    transform: skew(-45deg);
+}
+
+.text:hover{
+    opacity: 1;
+}
+
+.foot{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-left: 500px;
+    padding-top: 70px;
+    display: flex
+}
+
+.instagram{
+    margin-left: 50px;
+    height: 100px;
+    background-color: rgb(77, 72, 72);
+}
+.inst{
+    width: 170px;
+    height: 90px;
+}
+
+.cloth{
+    width: 70px;
+    height: 70px;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
